@@ -15,7 +15,7 @@
 <v-divider></v-divider>
 <v-list dense>
 <v-list-item-group color="primary">
-<v-list-item v-for="link in links" :key="link.title">
+<v-list-item v-for="link in menu" :key="link.title">
 <v-list-item-icon>
 <v-icon>{{ link.icon }}</v-icon>
 </v-list-item-icon>
@@ -49,6 +49,13 @@ links: [
 {title:"Чат", icon:"mdi-chat", url:"/orders"},
 {title:"Новости", icon:"mdi-ear-hearing", url:"/new"},
 {title:"Техподдержка", icon:"mdi-cat", url:"/list"}
+],
+
+menu: [
+{title:"Новости", icon:"mdi-account-check", url:"/login"},
+{title:"Форум", icon:"mdi-account-circle-outline", url:"/registration"},
+{title:"Личный кабинет", icon:"mdi-chat", url:"/orders"},
+{title:"Личные сообщения", icon:"mdi-ear-hearing", url:"/new"}
 ]
 }
 }
@@ -56,11 +63,3 @@ links: [
 </script>
 
 
-
-
-
- <v-btn  text><v-icon left>mdi-account-check</v-icon>Вход</v-btn> 
-       <v-btn  text><v-icon left>mdi-account-circle-outline</v-icon>Регистрация</v-btn>
-       <v-btn  text><v-icon left>mdi-chat</v-icon>Чат</v-btn>
-       <v-btn  text><v-icon left>mdi-ear-hearing</v-icon>Новости</v-btn>
-       <v-btn  text><v-icon left>mdi-cat</v-icon>Техподдержка</v-btn>
