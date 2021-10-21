@@ -5,10 +5,10 @@ new Vuetify({
     theme: {
         themes: {
             light: {
-                primary: '#800c16',
+                primary: '#503434',
                 secondary: '#7c4b4b',
-                accent: '#311818',
-                error: '#b71c1c',
+                accent: '#593030',
+                error: '#9a1212',
             },
         },
     },

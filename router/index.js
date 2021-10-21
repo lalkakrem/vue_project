@@ -1,11 +1,11 @@
 
 import Router from 'vue-router'
 import Home from '@/components/home'
-import Contact from '@/components/info/Contact'
-import News from '@/components/info/News'
 import Me from '@/components/info/Me'
+import Contact from '@/components/info/Contact'
 import Login from '@/components/auth/Login'
 import Registration from '@/components/auth/Registration'
+import News from '@/components/info/News'
 
 export default new Router({
     routes: [
@@ -26,7 +26,7 @@ export default new Router({
         },
         {
             path:"/login",
-            name:"login",
+            name:"Login",
             component: Login
         },
         {
