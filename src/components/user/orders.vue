@@ -1,13 +1,12 @@
 <template>
   <v-container fluid fill-height>
-    <v-layout row >
-      <v-flex xs12 sm6 offset-sm3 >
+    <v-layout row wrap >
+      <v-flex  >
 
-        <div id="app" >
+        <div id="app">
           <v-app id="inspire" style="background: #c5b3b3">
-            <v-card
+            <v-card style="width: 97%; margin-bottom: 40px; margin-top: 10px"
                 class="mx-auto"
-                max-width="500"
             >
               <v-toolbar style="background: #734f4f; color: #c5b3b3">
                 <v-toolbar-title>Мои заказы</v-toolbar-title>
@@ -66,7 +65,7 @@
 <script>
 export default {
   data: () => ({
-    selected: [2],
+    selected: [2, 3, 4, 5, 6, 7],
     orders: [
       {
         id:"49387",
@@ -84,6 +83,51 @@ export default {
         adId:"13",
         date: '2 недели назад назад',
         status: "В пути",
+
+      },
+      {
+        id:"12313",
+        name:"Заказ №12313",
+        phone:"+7(978)722-72-72",
+        adId:"13",
+        date: '4 месяца назад',
+        status: "Доставлен",
+
+      },
+      {
+        id:"12313",
+        name:"Заказ №12313",
+        phone:"+7(978)722-72-72",
+        adId:"13",
+        date: '4 месяца назад',
+        status: "Доставлен",
+
+      },
+      {
+        id:"12313",
+        name:"Заказ №12313",
+        phone:"+7(978)722-72-72",
+        adId:"13",
+        date: '4 месяца назад',
+        status: "Доставлен",
+
+      },
+      {
+        id:"12313",
+        name:"Заказ №12313",
+        phone:"+7(978)722-72-72",
+        adId:"13",
+        date: '4 месяца назад',
+        status: "Доставлен",
+
+      },
+      {
+        id:"12313",
+        name:"Заказ №12313",
+        phone:"+7(978)722-72-72",
+        adId:"13",
+        date: '4 месяца назад',
+        status: "Доставлен",
 
       },
       {

@@ -3,7 +3,7 @@
   <div>
     <v-container fluid>
       <v-layout row>
-        <v-flex xs12>
+        <v-flex xs20 >
           <v-carousel>
             <v-carousel-item
                 v-for="ad in ads"
@@ -11,7 +11,7 @@
                 :src="ad.src"
             >
               <div id="ad-link" >
-                <v-btn :to="'/ad/' + ad.id">{{ ad.title }}</v-btn>
+                <v-btn :to="'/ad/' + ad.id" style="background: rgba(255,255,255,0.47)">{{ ad.title }}</v-btn>
               </div>
             </v-carousel-item>
           </v-carousel>
@@ -37,7 +37,7 @@
             </v-card-title>
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn text :to="'/ad/' + ad.id">
+              <v-btn  :to="'/ad/' + ad.id">
                 Купить
               </v-btn>
               <v-btn raised color="primary">
@@ -109,7 +109,7 @@ export default {
   position:absolute;
   bottom: 50px;
   left:50%;
-  background: rgba(238, 228, 228, 0.5);
+  background: rgba(238, 228, 228, 0.25);
   transform: translate(-50%,0);
   padding: 5px 15px;
   border-top-right-radius: 5px;

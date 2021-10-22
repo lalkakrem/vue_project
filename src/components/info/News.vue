@@ -23,7 +23,7 @@
               </v-card-title>
               <v-card-actions>
                 <v-spacer></v-spacer>
-                <v-btn raised color="primary" text :to="'/news/' + news.id" >
+                <v-btn raised color="light_all2"  :to="'/news/' + news.id" >
                   Читать
                 </v-btn>
 
