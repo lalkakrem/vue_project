@@ -10,7 +10,7 @@
                 :key="ad.id"
                 :src="ad.src"
             >
-              <div id="ad-link" >
+              <div class="ad-linklala" >
                 <v-btn :to="'/ad/' + ad.id" style="background: rgba(255,255,255,0.47)">{{ ad.title }}</v-btn>
               </div>
             </v-carousel-item>
@@ -24,6 +24,7 @@
                 v-for="ad in ads"
                 :key="ad.id"
         >
+          <!-- bootstrap size check -->
           <v-card>
             <v-img
                 :src="ad.src"
@@ -39,7 +40,7 @@
             </v-card-text>
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn  :to="'/ad/' + ad.id">
+              <v-btn :to="'/ad/' + ad.id">
                 Купить
               </v-btn>
               <v-btn raised color="primary">
@@ -107,7 +108,7 @@ export default {
 }
 </script>
 <style scoped>
-#ad-link {
+.ad-linklala {
   position:absolute;
   bottom: 50px;
   left:50%;

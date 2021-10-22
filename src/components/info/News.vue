@@ -13,7 +13,6 @@
             <div id="ad-link2">
               <v-toolbar-text style="color: #e7d9d9; font-size: 15px">{{ad.desc}}</v-toolbar-text>
             </div>
-
           </v-carousel-item>
         </v-carousel>
       </v-flex>

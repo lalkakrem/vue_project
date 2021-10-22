@@ -43,7 +43,7 @@
           cols="12"
       >
         Это красивый подвал (c) Крем <br>
-        2021-2021
+        <p style="font-size: 15px">2021</p>
       </v-col>
     </v-footer>
   </v-app>
