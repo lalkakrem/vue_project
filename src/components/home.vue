@@ -32,9 +32,11 @@
             <v-card-title primary-title>
               <div>
                 <h3 class="headline mb-0"><b>{{ad.title}}</b></h3>
-                <div style="font-size: 14px">{{ad.desc}}</div>
               </div>
             </v-card-title>
+            <v-card-text>
+              <div style="font-size: 14px">{{ad.desc}}</div>
+            </v-card-text>
             <v-card-actions>
               <v-spacer></v-spacer>
               <v-btn  :to="'/ad/' + ad.id">

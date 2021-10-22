@@ -1,9 +1,9 @@
 
 <template>
   <div>
-  <v-container >
-    <v-layout row >
-      <v-flex >
+  <v-container>
+    <v-layout row>
+      <v-flex>
         <v-carousel>
           <v-carousel-item
               v-for="ad in news"
@@ -22,7 +22,7 @@
   <v-container fluid fill-height>
     <v-layout align-center justify-center >
       <v-container grid-list-lg>
-        <v-toolbar-title  style="color: #503434; font-size: 27px; transform: translate(+10%,-20%);">Лента новостей</v-toolbar-title>
+        <v-toolbar-title style="color: #503434; font-size: 27px; transform: translate(+10%,-20%);">Лента новостей</v-toolbar-title>
         <v-layout row wrap>
           <v-flex xs12 sm6 md20
                   v-for="news in news"
@@ -36,15 +36,16 @@
               <v-card-title primary-title>
                 <div>
                   <h3 class="headline mb-0"><b>{{news.title}}</b></h3>
-                  <div style="font-size: 14px">{{news.desc}}</div>
                 </div>
               </v-card-title>
+              <v-card-text primary-title>
+                <div style="font-size: 16px">{{news.desc}}</div>
+              </v-card-text>
               <v-card-actions>
                 <v-spacer></v-spacer>
                 <v-btn raised color="light_all2"  :to="'/news/' + news.id" >
                   Читать
                 </v-btn>
-
               </v-card-actions>
 
             </v-card>
@@ -62,12 +63,12 @@
   position: absolute;
   bottom: 50px;
   left:50%;
-  background: rgba(80, 52, 52, 0.66);
+  background: rgba(52, 39, 39, 0.66);
   transform: translate(-50%,0);
   padding: 2%;
   min-width: 100%;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
 }
 
 </style>

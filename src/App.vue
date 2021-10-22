@@ -25,7 +25,7 @@
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar app dark style="background: #734f4f" >
+    <v-app-bar app dark style="background: #734f4f">
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
       <v-btn text to="/">Главная</v-btn>
       <v-spacer></v-spacer>
@@ -33,11 +33,11 @@
         <v-btn style="color: #e7bbbb" v-for="link in links" :key="link.title" :to="link.url"  text><v-icon style="color: #cea0a0" left>{{ link.icon }}</v-icon>{{ link.title }}</v-btn>
       </v-toolbar-items>
     </v-app-bar>
-    <v-main style="background: #c5b3b3" >
+    <v-main style="background: #c5b3b3">
       <router-view></router-view>
     </v-main>
 
-    <v-footer padless style="background: #734f4f; color: #ead5d5" >
+    <v-footer padless style="background: #734f4f; color: #ead5d5">
       <v-col
           class="text-center"
           cols="12"
