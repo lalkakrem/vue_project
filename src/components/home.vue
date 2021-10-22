@@ -18,6 +18,9 @@
         </v-flex>
       </v-layout>
     </v-container>
+    <v-container fluid style='color: #ffffff; font-size: 30px; text-align: center; font-family: "Candara Light"'>
+      ШИРОКИЙ АССОРТИМЕНТ ТОВАРОВ ИЗ ЕВРОПЫ, КИТАЯ, КОРЕИ
+    </v-container>
     <v-container grid-list-lg>
       <v-layout row wrap>
         <v-flex xs12 sm6 md4
@@ -40,11 +43,8 @@
             </v-card-text>
             <v-card-actions>
               <v-spacer></v-spacer>
-              <v-btn :to="'/ad/' + ad.id">
-                Купить
-              </v-btn>
-              <v-btn raised color="primary">
-                Посмотреть
+              <v-btn :to="'/ad/' + ad.id" raised color="primary">
+                Как узнать ассортимент?
               </v-btn>
             </v-card-actions>
 
@@ -60,45 +60,45 @@ export default {
     return {
       ads:[
         {
-          title:"Хуа Чэн",
-          desc:"Это китаец я не знаю что еще вставлять",
+          title:"ГОЛОВНЫЕ УБОРЫ",
+          desc:"Описание к головным уборам",
           promo: true,
-          src: "https://pbs.twimg.com/media/EalIX3OXYAAitwa.jpg",
+          src: "https://cs1.livemaster.ru/storage/94/9c/0aa99f42484da538c7c75992beaq--aksessuary-modnaya-shapka-s-otvorotom-i-pomponom-traek.jpg",
           id:"1"
         },
         {
-          title:"Се Лянь",
-          desc:"Это китаец я не знаю что еще вставлять",
+          title:"АКСЕССУАРЫ",
+          desc:"Описание",
           promo: true,
-          src: "http://d.zaix.ru/rnhh.jpg",
+          src: "https://ae01.alicdn.com/kf/Hdf0ab54a52c546c78de5635dbbb203c7n/-.jpg_q50.jpg",
           id:"2"
         },
         {
-          title:"Вэй У Сянь",
-          desc:"Это китаец я не знаю что еще вставлять",
+          title:"ОДЕЖДА",
+          desc:"Описание",
           promo: true,
-          src: "http://d.zaix.ru/rnhj.png",
+          src: "http://d.zaix.ru/rosj.png",
           id:"3"
         },
         {
-          title:"Лань Чжань",
-          desc:"Это китаец я не знаю что еще вставлять",
+          title:"ВЕРХНЯЯ ОДЕЖДА",
+          desc:"Описание",
           promo: true,
-          src: "http://d.zaix.ru/rnhn.png",
+          src: "https://images.ru.prom.st/572324202_w640_h640_stilnaya-zimnyaya-zhenskaya.jpg",
           id:"4"
         },
         {
-          title:"Цзинь Лин",
-          desc:"Это китаец",
+          title:"ОБУВЬ",
+          desc:"Описание",
           promo: true,
-          src: "http://d.zaix.ru/rnho.png",
+          src: "https://avatars.mds.yandex.net/i?id=2a00000179efc64662e3160faf3c43b818fa-4395348-images-thumbs&n=13",
           id:"5"
         },
         {
-          title:"Ши Цинсюань",
-          desc:"Это китаец я не знаю что еще вставлять",
+          title:"НИЖНЕЕ БЕЛЬЕ",
+          desc:"Описание",
           promo: true,
-          src: "http://d.zaix.ru/rnhq.png",
+          src: "https://avatars.mds.yandex.net/i?id=2a00000179efc64662e3160faf3c43b818fa-4395348-images-thumbs&n=13",
           id:"6"
         },
 

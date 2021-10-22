@@ -45,29 +45,29 @@ export default {
     return {
       shops:[
         {
-          title: "Магазин №1",
-          desc:"Описание магазина",
+          title: "Магазин \"САМОРОДОК\"",
+          desc:"КРЫМ, г. ФЕОДОСИЯ, ул.ЗЕМСКАЯ ,12А",
           promo: true,
           src: "https://mobimg.b-cdn.net/v3/fetch/07/07a5912517ee8e518442ba5631bf417f.jpeg",
           id:"1"
         },
         {
-          title: "Магазин №2",
-          desc:"Описание магазина",
+          title: "Магазин \"ГЕНЕРАЛ\"",
+          desc:"КРЫМ, г. ФЕОДОСИЯ, ул.ЗЕМСКАЯ ,12А",
           promo: true,
           src: "https://avatars.mds.yandex.net/i?id=72b85b92eccedd88b97bb3c2be4c6aa4-4837145-images-thumbs&n=13",
           id:"2"
         },
         {
-          title: "Магазин №3",
-          desc:"Описание магазина",
+          title: "Магазин \"МАУЗЕР\"",
+          desc:"КРЫМ, г. ФЕОДОСИЯ, напротив музея древностей",
           promo: true,
           src: "https://cdn.fishki.net/upload/post/201603/23/1894215/norway-nature-scenery-lake-mountains-flowers-sunrise_1600x900.jpg",
           id:"3"
         },
         {
-          title: "Магазин №4",
-          desc:"Описание магазина",
+          title: "Название магазина",
+          desc:"КРЫМ, г. ФЕОДОСИЯ, ул.КРЫМСКАЯ",
           promo: true,
           src: "https://avatars.mds.yandex.net/i?id=cd807663a53e0fe5f78b7aef685bb7f6-5101081-images-thumbs&n=13",
           id:"4"

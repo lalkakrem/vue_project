@@ -4,10 +4,10 @@
       <v-list-item style="background: #503434">
         <v-list-item-content>
           <v-list-item-title class="title" style="color: #e8dbdb">
-            КИПУ
+            Лампетта
           </v-list-item-title>
           <v-list-item-subtitle style="color: #c5b3b3">
-            Учебный проект
+            Сеть магазинов одежды
           </v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
@@ -27,7 +27,7 @@
     </v-navigation-drawer>
     <v-app-bar app dark style="background: #734f4f">
       <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-      <v-btn text to="/">Главная</v-btn>
+      <v-btn text to="/">На главную</v-btn>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn style="color: #e7bbbb" v-for="link in links" :key="link.title" :to="link.url"  text><v-icon style="color: #cea0a0" left>{{ link.icon }}</v-icon>{{ link.title }}</v-btn>
@@ -42,8 +42,8 @@
           class="text-center"
           cols="12"
       >
-        Это красивый подвал (c) Крем <br>
-        <p style="font-size: 15px">2021</p>
+        <v-toolbar-text><v-icon color="light_all" style="margin-right: 10px; margin-bottom: 5px">mdi-phone</v-icon> +79788695273<br></v-toolbar-text>
+        <v-toolbar-text> <v-icon color="light_all" style="margin-right: 10px">mdi-gmail</v-icon> lampetta@gmail.com</v-toolbar-text>
       </v-col>
     </v-footer>
   </v-app>
@@ -55,14 +55,14 @@ export default {
     return {
       drawer: false,
       links: [
-        {title:"Вход", icon:"mdi-account-check", url:"/login"},
-        {title:"Регистрация", icon:"mdi-account-circle-outline", url:"/registration"},
+        //{title:"Вход", icon:"mdi-account-check", url:"/login"},
+        //{title:"Регистрация", icon:"mdi-account-circle-outline", url:"/registration"},
         {title:"Контакты", icon:"mdi-bell", url:"/contact"}
       ],
       menu: [
-        {title:"Личный кабинет", icon:"mdi-account", url:"/me"},
+        //{title:"Личный кабинет", icon:"mdi-account", url:"/me"},
         {title:"Новости", icon:"mdi-newspaper", url:"/news"},
-        {title:"Заказы", icon:"mdi-cart", url:"/orders"},
+        //{title:"Заказы", icon:"mdi-cart", url:"/orders"},
         {title:"Магазины", icon:"mdi-store", url:"/shops"}
       ]
     }

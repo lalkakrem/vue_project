@@ -1,4 +1,3 @@
-
 <template>
   <div>
   <v-container>
@@ -46,7 +45,6 @@
                   Читать
                 </v-btn>
               </v-card-actions>
-
             </v-card>
           </v-flex>
         </v-layout>
