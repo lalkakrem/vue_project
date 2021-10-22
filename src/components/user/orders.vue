@@ -1,37 +1,63 @@
 <template>
-  <v-container>
-    <v-layout row>
-      <v-flex xs12 sm6 offset-sm3>
-        <h1 class="mb-3 mt-3" style="color: #7a5050">Мои заказы:</h1>
+  <v-container fluid fill-height>
+    <v-layout row >
+      <v-flex xs12 sm6 offset-sm3 >
 
-        <v-list style="background: #c5b3b3">
-          <v-list-item
-              v-for="order in orders"
-              :key="order.id"
-              style="margin: 4px; background: #e8dfdf; "
-          >
-            <v-list-item-action>
-              <v-checkbox
-                  :input-value="order.done"
-                  color="secondary"
-                  @click="markDone(order)"
-              ></v-checkbox>
-            </v-list-item-action>
+        <div id="app" >
+          <v-app id="inspire" style="background: #c5b3b3">
+            <v-card
+                class="mx-auto"
+                max-width="500"
+            >
+              <v-toolbar style="background: #734f4f; color: #c5b3b3">
+                <v-toolbar-title>Мои заказы</v-toolbar-title>
+              </v-toolbar>
 
-            <v-list-item-content>
-              <v-list-item-title>{{ order.name }}</v-list-item-title>
-              <v-list-item-subtitle>{{ order.phone }}</v-list-item-subtitle><br>
-              <v-list-item-subtitle><b>Статус:</b> {{ order.status }}</v-list-item-subtitle>
-            </v-list-item-content>
+              <v-list two-line>
+                <v-list-item-group
+                    v-model="selected"
+                    active-class="accent--text"
+                    multiple
+                >
+                  <template v-for="(item, index) in orders">
+                    <v-list-item :key="item.title">
+                      <template v-slot:default="{ active }">
+                        <v-list-item-content>
+                          <v-list-item-title v-text="item.name"></v-list-item-title><br>
+                          <v-list-item-subtitle v-text="item.phone"></v-list-item-subtitle><br>
+                          <v-list-item-subtitle v-text="item.id"></v-list-item-subtitle><br>
+                          Статус: <v-list-item-subtitle v-text="item.status"></v-list-item-subtitle>
+                        </v-list-item-content>
 
-            <v-list-item-action>
-              <v-btn
-                  class="primary"
-                  :to="'/ad/' + order.adId"
-              >Просмотреть</v-btn>
-            </v-list-item-action>
-          </v-list-item>
-        </v-list>
+                        <v-list-item-action>
+                          <v-list-item-action-text v-text="item.date"></v-list-item-action-text>
+                          <v-icon
+                              v-if="!active"
+                              color="secondary"
+                          >
+                            mdi-check-outline
+                          </v-icon>
+
+                          <v-icon
+                              v-else
+                              color="secondary"
+                          >
+                            mdi-check-bold
+                          </v-icon>
+                        </v-list-item-action>
+                      </template>
+                    </v-list-item>
+
+                    <v-divider
+                        v-if="index < orders.length - 1"
+                        :key="index"
+                    ></v-divider>
+                  </template>
+                </v-list-item-group>
+              </v-list>
+            </v-card>
+          </v-app>
+        </div>
       </v-flex>
     </v-layout>
   </v-container>
@@ -39,34 +65,37 @@
 
 <script>
 export default {
-  data () {
-    return {
-      orders: [
-        {
-          id:"23123",
-          name:"Заказ #23123",
-          phone:"+797872727272",
-          adId:"1",
-          status:"Завершён",
-          done:true
-        },
-        {
-          id:"45345",
-          name:"Заказ #45345",
-          phone:"+797872727272",
-          adId:"6",
-          status:"Отправлен",
-          done:false
-        },
+  data: () => ({
+    selected: [2],
+    orders: [
+      {
+        id:"49387",
+        name:"Заказ №49387",
+        phone:"+7(978)722-72-72",
+        adId:"13",
+        date: '2 дня назад',
+        status: "Отправлен",
 
-      ]
-    }
-  },
-  methods: {
-    markDone(order) {
-      order.done = !order.done
-      console.log(order.done)
-    }
-  }
+      },
+      {
+        id:"34242",
+        name:"Заказ №34242",
+        phone:"+7(978)722-72-72",
+        adId:"13",
+        date: '2 недели назад назад',
+        status: "В пути",
+
+      },
+      {
+        id:"12313",
+        name:"Заказ №12313",
+        phone:"+7(978)722-72-72",
+        adId:"13",
+        date: '4 месяца назад',
+        status: "Доставлен",
+
+      },
+    ],
+  })
 }
 </script>
