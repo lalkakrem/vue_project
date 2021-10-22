@@ -6,6 +6,10 @@ import Contact from '@/components/info/Contact'
 import Login from '@/components/auth/Login'
 import Registration from '@/components/auth/Registration'
 import News from '@/components/info/News'
+import Ad from '@/components/ads/Ad'
+import AdList from '@/components/ads/AdList'
+import NewAd from '@/components/ads/NewAd'
+
 
 export default new Router({
     routes: [
@@ -38,7 +42,23 @@ export default new Router({
             path: "/news",
             name: "news",
             component: News
+        },
+        {
+            path:"/ad/:id",
+            name:"ad",
+            component:Ad
+        },
+        {
+            path:"/list",
+            name:"list",
+            component: AdList
+        },
+        {
+            path:"/new",
+            name:"newAd",
+            component: NewAd
         }
+
     ],
     mode: 'history'
 })
