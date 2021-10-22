@@ -9,7 +9,7 @@ import News from '@/components/info/News'
 import Ad from '@/components/ads/Ad'
 import AdList from '@/components/ads/AdList'
 import NewAd from '@/components/ads/NewAd'
-
+import Orders from '@/components/user/orders'
 
 export default new Router({
     routes: [
@@ -57,6 +57,11 @@ export default new Router({
             path:"/new",
             name:"newAd",
             component: NewAd
+        },
+        {
+            path:"/orders",
+            name:"orders",
+            component: Orders
         }
 
     ],
