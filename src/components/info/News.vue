@@ -11,7 +11,7 @@
               :src="ad.src"
           >
             <div id="ad-link2">
-              <v-toolbar-text  style="color: #e7d9d9; font-size: 15px; max-width: 20px">{{ad.desc}}</v-toolbar-text>
+              <v-toolbar-text style="color: #e7d9d9; font-size: 15px">{{ad.desc}}</v-toolbar-text>
             </div>
 
           </v-carousel-item>
@@ -22,7 +22,7 @@
   <v-container fluid fill-height>
     <v-layout align-center justify-center >
       <v-container grid-list-lg>
-        <v-toolbar-title style="color: #503434; font-size: 27px; transform: translate(+10%,-20%);">Лента новостей</v-toolbar-title>
+        <v-toolbar-title  style="color: #503434; font-size: 27px; transform: translate(+10%,-20%);">Лента новостей</v-toolbar-title>
         <v-layout row wrap>
           <v-flex xs12 sm6 md20
                   v-for="news in news"
@@ -64,11 +64,12 @@
   left:50%;
   background: rgba(80, 52, 52, 0.66);
   transform: translate(-50%,0);
-  padding: 3%;
+  padding: 2%;
   min-width: 100%;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
+
 </style>
 
 <script>
@@ -106,7 +107,7 @@ export default {
         },
         {
           title:"Цзинь Лин",
-          desc:"Это китаец он противный но милый МНЕ НУЖНО БОЛЬШЕ ТЕКСТА ДЛЯ ПРОВЕРКИ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ТЕКСТ ",
+          desc:"Это китаец он противный но милый",
           promo: true,
           src: "http://d.zaix.ru/rnho.png",
           id:"5"
