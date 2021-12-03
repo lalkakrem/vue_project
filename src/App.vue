@@ -62,7 +62,7 @@ export default {
       menu: [
         //{title:"Личный кабинет", icon:"mdi-account", url:"/me"},
         {title:"Новости", icon:"mdi-newspaper", url:"/news"},
-        //{title:"Заказы", icon:"mdi-cart", url:"/orders"},
+        {title:"Заказы", icon:"mdi-cart", url:"/orders"},
         {title:"Магазины", icon:"mdi-store", url:"/shops"}
       ]
     }

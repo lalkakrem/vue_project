@@ -27,7 +27,7 @@
                 v-for="ad in ads"
                 :key="ad.id"
         >
-          <!-- bootstrap size check -->
+          <!-- bootstrap size check НАДО ЗАГУГЛИТЬ -->
           <v-card>
             <v-img
                 :src="ad.src"

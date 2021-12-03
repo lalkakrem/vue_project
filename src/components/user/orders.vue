@@ -29,22 +29,17 @@
                         </v-list-item-content>
 
                         <v-list-item-action>
-                          <v-list-item-action-text v-text="item.date"></v-list-item-action-text>
-                          <v-icon
-                              v-if="!active"
-                              color="secondary"
-                          >
-                            mdi-check-outline
-                          </v-icon>
 
-                          <v-icon
-                              v-else
-                              color="secondary"
-                          >
-                            mdi-check-bold
-                          </v-icon>
+                          <v-list-item-action-text v-text="item.date"></v-list-item-action-text>
+                          <v-icon v-if="!active" color="secondary">mdi-check-outline</v-icon>
+                          <v-icon v-else color="secondary">mdi-check-bold</v-icon>
+                          <v-list-item-action>
+                            <v-btn class="primary">Открыть заказ</v-btn>
+                          </v-list-item-action>
                         </v-list-item-action>
                       </template>
+
+
                     </v-list-item>
 
                     <v-divider
